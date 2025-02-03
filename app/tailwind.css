@@ -32,16 +32,17 @@ label {
 .btn:hover {
   @apply bg-blue-700;
 }
-.btn-narrow {
-  @apply max-w-6xl mx-auto
-}
 
 .border-color {
   @apply divide-gray-300
 }
 
 .container {
-  @apply px-2;
+  @apply px-4 md:px-2;
+}
+
+select {
+  @apply bg-gray-200 px-2 py-2 rounded-sm;
 }
 
 svg {
