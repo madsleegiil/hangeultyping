@@ -82,7 +82,7 @@ export const GamePlay: FunctionComponent<Props> = ({gameSettings}) => {
                 {wordsFinished} words out of {gameSettings.numberOfWords} finished!
             </div>
             {gameState !== GameState.NOT_STARTED &&
-                <div className="mt-12">
+                <div className="mt-12 sm:visible invisible">
                     <label className="inline-flex items-center cursor-pointer">
                         <input type="checkbox" value={showKoreanKeyboardLayout ? "" : undefined}
                                className="sr-only peer"
