@@ -62,7 +62,7 @@ export const GamePlay = () => {
             {gameState === GameState.CORRECT_WORD_SUBMITTED &&
                 <div>
                     <h3>Correct!</h3>
-                    <button className="btn" onClick={() => pickNewWord()}>New word</button>
+                    <button autoFocus className="btn" onClick={() => pickNewWord()}>New word</button>
                 </div>
             }
             {gameState === GameState.FINISHED &&
