@@ -40,7 +40,7 @@ export const GamePlay = () => {
     }
 
     return (
-        <div className="container mx-auto flex flex-col place-content-center text-center">
+        <div className="container md:max-w-xl mx-auto flex flex-col place-content-center text-center">
             <h1 className="text-2xl">Game</h1>
             {wordsFinished > 0 &&
                 <div>
@@ -70,9 +70,7 @@ export const GamePlay = () => {
                     <h3>Finished!</h3>
                 </div>
             }
-            <div className="mx-auto">
-                <KoreanKeyboard/>
-            </div>
+            <KoreanKeyboard/>
         </div>
     )
 }

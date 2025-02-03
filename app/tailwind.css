@@ -39,3 +39,12 @@ label {
 .border-color {
   @apply divide-gray-300
 }
+
+.container {
+  @apply px-2;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}

@@ -2,8 +2,8 @@ import css from "./koreanKeyboard.module.css";
 
 export const KoreanKeyboard = () => {
     return (
-        <svg width="510" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect width="510" height="180" fill="#f5f5f5" stroke="black"/>
+        <svg viewBox="0 0 510 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <rect width="510" height="200" fill="#f5f5f5" stroke="black"/>
             
             <g>
                 <rect className={css.key} x="10" y="20" width="40" height="40"/>
