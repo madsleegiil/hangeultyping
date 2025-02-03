@@ -1,6 +1,6 @@
 import {KoreanKeyboard} from "~/components/KoreanKeyboard";
 import {ChangeEvent, useState} from "react";
-import {oneBlockWords, pickRandomWord} from "~/.client/words";
+import {mapLatinToHangeul, oneBlockWords, pickRandomWord} from "~/.client/gameUtils";
 
 enum GameState {
     NOT_STARTED,

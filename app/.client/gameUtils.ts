@@ -11,3 +11,45 @@ export const pickRandomWord = (words: string[]): [string, string[]] => {
     const randomWord = words[Math.floor(Math.random() * words.length)];
     return [randomWord, words.filter((word) => word !== randomWord)]
 }
+
+// TODO: Handle JAMO blocks
+export const mapLatinToHangeul = (keys: string): string =>
+    keys.split("").map((key) => {
+        const hangeulKey = latinKeyToHangeul.get(key);
+        return hangeulKey ? hangeulKey : key;
+    }).join("");
+
+const latinKeyToHangeul = new Map<string, string>([
+    ["q" ,"ㅂ"],
+    ["w" ,"ㅈ"],
+    ["e" ,"ㄷ"],
+    ["r" ,"ㄱ"],
+    ["t" ,"쇼"],
+    ["y" ,"ㅕ"],
+    ["u" ,"ㅑ"],
+    ["i" ,"ㅐ"],
+    ["o" ,"ㅔ"],
+    ["a" , "ㅁ"],
+    ["s" , "ㄴ"],
+    ["d" , "ㅇ"],
+    ["f" , "ㄹ"],
+    ["g" , "ㅎ"],
+    ["h" , "ㅗ"],
+    ["j" , "ㅓ"],
+    ["k" , "ㅏ"],
+    ["l" , "ㅣ"],
+    ["z" , "ㅋ"],
+    ["x" , "ㅌ"],
+    ["c" , "ㅊ"],
+    ["v" , "ㅍ"],
+    ["b" , "ㅠ"],
+    ["n" , "ㅜ"],
+    ["m" , "ㅡ"],
+    ["Q" , "ㅃ"],
+    ["W" , "ㅉ"],
+    ["E" , "ㄸ"],
+    ["R" , "ㄲ"],
+    ["T" , "ㅆ"],
+    ["O", "ㅒ"],
+    ["P", "ㅖ"],
+])
