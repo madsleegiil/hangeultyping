@@ -69,17 +69,17 @@ export const GamePlay: FunctionComponent<Props> = ({gameSettings}) => {
             }
             {gameState === GameState.CORRECT_WORD_SUBMITTED &&
                 <div>
-                    <h3>Correct!</h3>
+                    <h3 className="text-xl mb-4">Correct!</h3>
                     <button autoFocus className="btn" onClick={() => pickNewWord()}>New word</button>
                 </div>
             }
             {gameState === GameState.FINISHED &&
                 <div>
-                    <h3>Finished!</h3>
+                    <h3 className="text-xl">Finished!</h3>
                 </div>
             }
             <div className="mt-10">
-                {wordsFinished} words out of {gameSettings.numberOfWords} finished!
+            {wordsFinished} words out of {gameSettings.numberOfWords} finished!
             </div>
             {gameState !== GameState.NOT_STARTED &&
                 <div className="mt-12 sm:visible invisible">
