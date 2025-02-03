@@ -8,23 +8,23 @@ export const KoreanKeyboard = () => {
             <g>
                 <rect className={css.key} x="10" y="20" width="40" height="40"/>
                 <text className={css.label} x="30" y="45">ㅂ</text>
-                <text className={css.shiftLabel} x="30" y="30">ㅃ</text>
+                <text className={css.shiftLabel} x="40" y="30">ㅃ</text>
 
                 <rect className={css.key} x="60" y="20" width="40" height="40"/>
                 <text className={css.label} x="80" y="45">ㅈ</text>
-                <text className={css.shiftLabel} x="80" y="30">ㅉ</text>
+                <text className={css.shiftLabel} x="90" y="30">ㅉ</text>
 
                 <rect className={css.key} x="110" y="20" width="40" height="40"/>
                 <text className={css.label} x="130" y="45">ㄷ</text>
-                <text className={css.shiftLabel} x="130" y="30">ㄸ</text>
+                <text className={css.shiftLabel} x="140" y="30">ㄸ</text>
 
                 <rect className={css.key} x="160" y="20" width="40" height="40"/>
                 <text className={css.label} x="180" y="45">ㄱ</text>
-                <text className={css.shiftLabel} x="180" y="30">ㄲ</text>
+                <text className={css.shiftLabel} x="190" y="30">ㄲ</text>
 
                 <rect className={css.key} x="210" y="20" width="40" height="40"/>
                 <text className={css.label} x="230" y="45">ㅅ</text>
-                <text className={css.shiftLabel} x="230" y="30">ㅆ</text>
+                <text className={css.shiftLabel} x="240" y="30">ㅆ</text>
 
                 <rect className={css.key} x="260" y="20" width="40" height="40"/>
                 <text className={css.label} x="280" y="45">ㅛ</text>
@@ -37,11 +37,11 @@ export const KoreanKeyboard = () => {
 
                 <rect className={css.key} x="410" y="20" width="40" height="40"/>
                 <text className={css.label} x="430" y="45">ㅐ</text>
-                <text className={css.shiftLabel} x="430" y="30">ㅒ</text>
+                <text className={css.shiftLabel} x="440" y="32">ㅒ</text>
 
                 <rect className={css.key} x="460" y="20" width="40" height="40"/>
                 <text className={css.label} x="480" y="45">ㅔ</text>
-                <text className={css.shiftLabel} x="480" y="30">ㅖ</text>
+                <text className={css.shiftLabel} x="490" y="32">ㅖ</text>
 
                 <rect className={css.key} x="20" y="70" width="40" height="40"/>
                 <text className={css.label} x="40" y="95">ㅁ</text>
