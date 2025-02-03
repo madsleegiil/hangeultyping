@@ -10,3 +10,32 @@ body {
     color-scheme: dark;
   }
 }
+
+input {
+  @apply border border-color mb-2 rounded-sm pl-2 pr-2 pt-1 pb-1;
+}
+
+label {
+  @apply font-semibold text-sm mb-2;
+}
+
+.btn {
+  @apply text-white py-2 px-4 rounded bg-blue-600 cursor-pointer;
+}
+.btn-small {
+  @apply text-sm py-1 bg-transparent text-blue-600 border border-blue-600;
+}
+.btn-small:hover {
+  @apply text-white;
+}
+
+.btn:hover {
+  @apply bg-blue-700;
+}
+.btn-narrow {
+  @apply max-w-6xl mx-auto
+}
+
+.border-color {
+  @apply divide-gray-300
+}

@@ -1,0 +1,19 @@
+.key {
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.label {
+    font-size: 14px;
+    font-family: Arial,
+    sans-serif;
+    text-anchor: middle;
+}
+
+.shiftLabel {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-anchor: middle;
+    fill: gray;
+}
