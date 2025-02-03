@@ -1,6 +1,7 @@
 import {KoreanKeyboard} from "~/components/KoreanKeyboard";
 import {ChangeEvent, useState} from "react";
 import {oneBlockWords, pickRandomWord} from "~/.client/words";
+import {newExpression} from "@babel/types";
 
 enum GameState {
     NOT_STARTED,
@@ -40,8 +41,7 @@ export const GamePlay = () => {
     }
 
     return (
-        <div className="container md:max-w-xl mx-auto flex flex-col place-content-center text-center">
-            <h1 className="text-2xl">Game</h1>
+        <div className="mt-8 container md:max-w-xl mx-auto flex flex-col place-content-center text-center">
             {wordsFinished > 0 &&
                 <div>
                     {wordsFinished} words out of {wordsToFinish} finished!
@@ -54,9 +54,9 @@ export const GamePlay = () => {
             }
             { gameState === GameState.TYPING_WORD &&
                 <div>
-                    <h3>Type the word</h3>
-                    <div>{currentWord}</div>
-                    <input value={typedWord} onChange={handleInput}/>
+                    <h3 className="text-gray-800">Word to type:</h3>
+                    <div className="mt-6 mb-6 text-6xl">{currentWord}</div>
+                    <input autoFocus value={typedWord} onChange={handleInput}/>
                 </div>
             }
             { gameState === GameState.CORRECT_WORD_SUBMITTED &&
