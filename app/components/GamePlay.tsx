@@ -70,6 +70,7 @@ export const GamePlay: FunctionComponent<Props> = ({gameSettings}) => {
             {gameState === GameState.CORRECT_WORD_SUBMITTED &&
                 <div>
                     <h3 className="text-xl mb-4">Correct!</h3>
+                    <div className="mt-6 mb-6 text-6xl">{currentWord}</div>
                     <button autoFocus className="btn" onClick={() => pickNewWord()}>New word</button>
                 </div>
             }
