@@ -5,8 +5,8 @@ import {NewGame} from "~/components/NewGame";
 
 export const meta: MetaFunction = () => {
     return [
-        {title: "TypeMonkey"},
-        {name: "TypeMonkey", content: "Learn typing"},
+        {title: "hangeultyping"},
+        {name: "hangeultyping", content: "Learn typing"},
     ];
 };
 
