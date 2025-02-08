@@ -1,3 +1,2 @@
-# hangeultyping
-Small app to practise typing Hangul.
-
+# HangeulTyping
+Small app to practice typing Hangeul: https://practicehangeul.netlify.app/
