@@ -13,7 +13,7 @@ export const NewGame = () => {
                 </select>
             </div>
             <div className="flex flex-col items-center">
-                <label>Max number of blocks per word</label>
+                <label>Number of blocks per word</label>
                 <select name="numberOfBlocksPerWord">
                     <option value="1">1</option>
                     <option value="2">2</option>
